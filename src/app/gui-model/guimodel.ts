@@ -205,6 +205,7 @@ export class GuiModel {
                         },
                         {
                             "type": "list",
+                            "name": "friendKey",
                             "icon": "fa-user",
                             "color": "blue",
                             "search": true,
@@ -214,7 +215,7 @@ export class GuiModel {
                             }
                         },
                         {
-                            "type": "list",
+                            "type": "button",
                             "icon": "fa-user",
                             "color": "blue",
                             "search": true,
