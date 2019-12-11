@@ -218,9 +218,7 @@ export class GuiModel {
                             "color": "blue",
                             "search": true,
                             "url": "/friend",
-                            "form": {
-                                "form": "FriendForm"
-                            }
+                            "page": "friendpage"
                         },
                         {
                             "type": "button",
@@ -230,6 +228,34 @@ export class GuiModel {
                             "url": "/friend/:friendKey",
                             "form": {
                                 "form": "FriendForm"
+                            }
+                        },
+                    ]
+                },
+                {
+                    "id": "friendpage",
+                    "elementList": [
+                        {
+                            "type": "backbutton",
+                        },
+                        {
+                            "type": "button",
+                            "name": "EditFriend",
+                            "icon": "fa-user",
+                            "color": "green",
+                            "form": {
+                                "form": "FriendForm"
+                            }
+                        },
+                        {
+                            "type": "newButton",
+                            "name": "AddActivity",
+                            "icon": "fa-biking",
+                            "color": "turquoise",
+                            "search": true,
+                            "url": "/friend/:friendKey",
+                            "form": {
+                                "form": "AddActivityForm"
                             }
                         },
                     ]
@@ -297,11 +323,11 @@ export class GuiModel {
                         },
                         {
                             "type": "newButton",
-                            "name": "NewFriend",
+                            "name": "NewActivity",
                             "icon": "fa-user",
                             "color": "green",
                             "form": {
-                                "form": "FriendForm"
+                                "form": "AddActivityForm"
                             }
                         },
                     ]
