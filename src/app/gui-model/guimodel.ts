@@ -4,6 +4,7 @@ export class GuiModel {
     Erscheinen Texte in {}, so kann die Übersetzung in example-translation-service.ts definiert werden
     */
 
+    // noinspection SyntaxError
     private _guiModel = {
         "application": {
             "title": "kumarmit's App",
@@ -35,7 +36,7 @@ export class GuiModel {
                             "required": true
                         },
                         {
-                            "id":   "location",
+                            "id": "location",
                             "type": "autocomplete",
                             "name": "Location",
                             "url": "/location",
@@ -136,7 +137,7 @@ export class GuiModel {
                     "url": "/friend/:friendKey/activity",
                     "formFieldList": [
                         {
-                            "id":   "activity",
+                            "id": "activity",
                             "type": "autocomplete",
                             "name": "Activity",
                             "url": "/activity",
@@ -186,6 +187,13 @@ export class GuiModel {
                             "color": "wisteria",
                             "page": "groupspage",
                         },
+                        {
+                            "type": "button",
+                            "name": "Activities",
+                            "icon": "fa-biking",
+                            "color": "turquoise",
+                            "page": "activitiespage",
+                        }
                     ]
                 },
                 {
@@ -280,7 +288,24 @@ export class GuiModel {
                             }
                         },
                     ]
-                }
+                },
+                {
+                    "id": "activitiespage",
+                    "elementList": [
+                        {
+                            "type": "backbutton",
+                        },
+                        {
+                            "type": "newButton",
+                            "name": "NewFriend",
+                            "icon": "fa-user",
+                            "color": "green",
+                            "form": {
+                                "form": "FriendForm"
+                            }
+                        },
+                    ]
+                },
             ]
         }
     };
